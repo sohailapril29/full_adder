@@ -1,0 +1,75 @@
+Magic 271485
+Revision Verdi_U-2023.03-SP1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1272 387 100 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/sohail/Downloads/full_adder/sim/inter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 80.800000
+cursor 80.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 7
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/sohail/Downloads/full_adder/sim/inter.fsdb"
+addSignal -h 15 /tb_full_adder/dut/a
+addSignal -h 15 /tb_full_adder/dut/b
+addSignal -h 15 /tb_full_adder/dut/cin
+addSignal -h 15 /tb_full_adder/dut/sum
+addSignal -h 15 /tb_full_adder/dut/cout
+addSignal -h 15 /tb_full_adder/dut/b
+addSignal -h 15 /tb_full_adder/dut/sum
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/sohail/Downloads/full_adder/sim/inter.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_full_adder"
+
+SCOPE_LIST_BEGIN
+"/tb_full_adder"
+"/tb_full_adder/dut"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

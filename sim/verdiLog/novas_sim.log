@@ -1,0 +1,51 @@
+Invoking simulator...
+
+./simv -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./simv.daidir"
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Jan 31 15:39 2026
+
+Checkout succeeded: VCS-BASE-RUNTIME/AF3AD4D7787CF4828637
+	License file: 27020@14.139.1.126
+	License Server: 27020@14.139.1.126
+
+*Verdi* Loading libsscore_vcs202303.so
+
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+
+*Verdi* : Create FSDB file '/home/sohail/Downloads/full_adder/sim/inter.fsdb'
+
+*Verdi* : Flush all FSDB Files at 0 s.
+
+*Verdi* : Enable RPC Server(27612)
+
+srcTBInvokeSim
+[SCL] 01/31/2026 15:39:03 Checking status for feature VCS-BASE-RUNTIME
+[SCL] 01/31/2026 15:39:03 PID:27612 Client:mjlab1.mjcollege.ac.in Server:27020@14.139.1.126 Checkout succeeded VCS-BASE-RUNTIME 2023.03 from VCS-Base-Runtime-Pkg
+xterm-256color is Not a valid terminal...
+Verdi>run
+*Verdi* WARNING: Env/runtime option has specified fsdbfile name as "/home/sohail/Downloads/full_adder/sim/inter.fsdb". Fsdbfile name in task "tb_full_adder.fsdb" is ignored.
+*Verdi* : Begin traversing the scope (tb_full_adder), layer (0).
+*Verdi* : End of traversing.
+A B Cin | Sum Cout
+------------------
+ 0 0  0  |  0    0
+ 0 0  1  |  1    0
+ 0 1  0  |  1    0
+ 0 1  1  |  0    1
+ 1 0  0  |  1    0
+ 1 0  1  |  0    1
+ 1 1  0  |  0    1
+ 1 1  1  |  1    1
+$finish called from file "./../tb/tb_full_adder.v", line 35.
+$finish at simulation time                   80
+Simulation complete, time is 80.
+tb_full_adder.v, 35 :         $finish;
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 80
+CPU Time:      0.030 seconds;       Data structure size:   0.0Mb
+Sat Jan 31 15:39:37 2026
+[SCL] 01/31/2026 15:39:37 PID:27612 Client:mjlab1.mjcollege.ac.in checkin (null) 
+debExit
